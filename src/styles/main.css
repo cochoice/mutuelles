@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* ---------- Police Nunito (locale, /public/fonts) ---------- */
+/* 3 fichiers au lieu de 5 (sobriété, EcoIndex) : chaque fichier couvre deux graisses voisines */
+@font-face { font-family: "Nunito"; src: url("/fonts/Nunito-400.woff2") format("woff2"); font-weight: 400 500; font-display: swap; }
+@font-face { font-family: "Nunito"; src: url("/fonts/Nunito-700.woff2") format("woff2"); font-weight: 600 700; font-display: swap; }
+@font-face { font-family: "Nunito"; src: url("/fonts/Nunito-800.woff2") format("woff2"); font-weight: 800 900; font-display: swap; }
+
+/* ---------- Tokens charte CoChoice V2 ---------- */
+@theme {
+  --font-sans: "Nunito", "Arial Rounded MT Bold", Arial, sans-serif;
+
+  --color-rose: #FF7777;          /* accent, fonds, boutons */
+  --color-pervenche: #5B7BFA;     /* accent, fonds, boutons */
+  --color-indigo: #2A1F50;        /* titres, fonds sombres */
+  --color-lavande: #F3F0F8;       /* fonds de section, tableaux */
+  --color-rose-texte: #CC3A44;    /* texte rose (contraste AA) */
+  --color-pervenche-texte: #3D5BE0; /* liens, texte bleu */
+  --color-encre: #5F567C;         /* texte courant */
+}
+
+/* ---------- Base ---------- */
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white font-sans text-encre antialiased; }
+  h1, h2, h3 { @apply font-extrabold text-indigo; }
+}
+
+/* ---------- Composants réutilisables (Tailwind v4 : @utility) ---------- */
+@utility container-site { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+@utility surtitre { @apply text-sm font-bold uppercase tracking-widest text-rose-texte; }
+@utility btn { @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-bold transition; }
+@utility btn-primary { @apply btn bg-indigo text-white hover:bg-pervenche-texte; }
+@utility btn-secondary { @apply btn border-2 border-indigo text-indigo hover:bg-lavande; }
+@utility card { @apply rounded-3xl bg-white p-6 shadow-sm ring-1 ring-indigo/10; }

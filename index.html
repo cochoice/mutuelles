@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoChoice pour les mutuelles étudiantes · Programme de prévention contraceptive</title>
+  <meta name="description" content="Mutuelles étudiantes : un programme de prévention clé en main qui implique aussi les étudiants dans la contraception. Ateliers mixtes sur les campus, appli pour vos adhérent·es, bilan anonymisé pour votre rapport de prévention. Prenez rendez-vous." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="module" src="/src/scripts/main.js"></script>
+</head>
+<body>
+
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-indigo focus:px-5 focus:py-3 focus:font-bold focus:text-white">Aller au contenu</a>
+
+  <!-- 1. HEADER STICKY : logo seul + CTA (1 page = 1 objectif = 1 CTA) -->
+  <header class="sticky top-0 z-40 border-b border-indigo/10 bg-white/85 backdrop-blur-md">
+    <div class="container-site flex h-16 items-center justify-between gap-4">
+      <a href="./" aria-label="CoChoice pour les mutuelles étudiantes, accueil" class="rounded focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-pervenche-texte"><img src="/logos/cochoice-logo.svg" alt="CoChoice" width="435" height="76" class="h-6 w-auto sm:h-8" /></a>
+      <button type="button" data-open-demo class="inline-flex shrink-0 items-center justify-center rounded-full bg-indigo px-4 py-2 text-sm font-bold text-white transition hover:bg-pervenche-texte focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-pervenche-texte sm:px-6 sm:py-3 sm:text-base">Prendre rendez-vous</button>
+    </div>
+  </header>
+
+  <main id="contenu" tabindex="-1" class="focus:outline-none">
+
+    <!-- 2. HERO -->
+    <section class="relative isolate overflow-hidden bg-indigo text-white">
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
+        <div data-parallax="0.25" class="absolute -top-24 -left-24 size-72 rounded-full bg-rose/40 blur-3xl will-change-transform md:size-96"></div>
+        <div data-parallax="-0.15" class="absolute -right-20 -bottom-32 size-80 rounded-full bg-pervenche/50 blur-3xl will-change-transform md:size-[28rem]"></div>
+      </div>
+      <div class="container-site grid items-center gap-12 py-20 md:py-28 lg:grid-cols-[1.15fr_1fr]">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-widest text-rose">Mutuelles étudiantes · Prévention santé</p>
+          <h1 class="mt-4 max-w-3xl text-3xl text-white sm:text-4xl md:text-5xl">Une prévention contraceptive qui embarque enfin les deux partenaires.</h1>
+          <p class="mt-6 max-w-2xl text-lg text-white/85">Rendez-vous, renouvellements, dépenses&nbsp;: la charge contraceptive repose encore presque entièrement sur les étudiantes. CoChoice propose à votre mutuelle un programme clé en main pour impliquer aussi les étudiants, avec des ateliers mixtes sur les campus, une appli pour vos adhérent·es et un bilan anonymisé pour votre rapport de prévention.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <button type="button" data-open-demo class="btn bg-rose text-indigo hover:bg-white focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-white">Prendre rendez-vous</button>
+            <a href="#programme" class="btn border-2 border-white text-white hover:bg-white/10 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-white">Découvrir le programme</a>
+          </div>
+        </div>
+        <img src="/images/hero-duo-1100.webp" srcset="/images/hero-duo-640.webp 640w, /images/hero-duo-1100.webp 1100w" sizes="(min-width: 1024px) 480px, (min-width: 640px) 600px, 100vw" width="1100" height="733" fetchpriority="high" alt="Une étudiante et un étudiant assis côte à côte dans un café, qui se regardent en souriant." class="aspect-[3/2] w-full max-w-xl rounded-3xl object-cover shadow-xl ring-1 ring-white/15 lg:max-w-none" />
+      </div>
+    </section>
+
+    <!-- 3. LE CONSTAT (chiffres sourcés uniquement) -->
+    <section class="container-site py-20">
+      <p class="surtitre">Le constat</p>
+      <h2 class="mt-3 max-w-3xl text-3xl md:text-4xl">Sur la contraception, la prévention parle encore surtout aux étudiantes.</h2>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <div class="card"><h3 class="text-xl">Un partenaire sur deux absent du choix</h3><p class="mt-2">1 jeune femme en couple sur 2 dit que son partenaire n’est pas impliqué dans le choix de la contraception.</p><p class="mt-3 text-sm"><a class="font-semibold text-pervenche-texte underline underline-offset-4 hover:text-indigo" href="https://www.frequencemedicale.com/onco-dermato/patient/294149-Contraception-cette-charge-est-elle-partagee-dans-les-couples" target="_blank" rel="noopener">Ifop pour Biogaran, 2024<span class="sr-only"> (nouvel onglet)</span></a></p></div>
+        <div class="card"><h3 class="text-xl">Des étudiants difficiles à toucher</h3><p class="mt-2">Les hommes représentent 56&nbsp;% des cas de chlamydia diagnostiqués, mais se font deux fois moins dépister.</p><p class="mt-3 text-sm"><a class="font-semibold text-pervenche-texte underline underline-offset-4 hover:text-indigo" href="https://www.santepubliquefrance.fr/chlamydiae/donnees" target="_blank" rel="noopener">Santé publique France, 2024<span class="sr-only"> (nouvel onglet)</span></a></p></div>
+        <div class="card"><h3 class="text-xl">Une envie de partager qui reste théorique</h3><p class="mt-2">80&nbsp;% des 18-30 ans souhaitent une responsabilité contraceptive partagée. Dans les faits, l’organisation ne suit pas.</p><p class="mt-3 text-sm"><a class="font-semibold text-pervenche-texte underline underline-offset-4 hover:text-indigo" href="https://www.pourquoidocteur.fr/Articles/Question-d-actu/37573-Contraception-masculine-d-un-jeune-adulte-pret-recourir" target="_blank" rel="noopener">OpinionWay, 2021<span class="sr-only"> (nouvel onglet)</span></a></p></div>
+      </div>
+    </section>
+
+    <!-- 4. LE PROGRAMME -->
+    <section id="programme" class="scroll-mt-16 bg-lavande py-20">
+      <div class="container-site">
+        <p class="surtitre">Le programme</p>
+        <h2 class="mt-3 max-w-3xl text-3xl md:text-4xl">Deux leviers à intégrer à vos actions de prévention.</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="card flex flex-col">
+            <img src="/images/atelier-800.webp" srcset="/images/atelier-480.webp 480w, /images/atelier-800.webp 800w" sizes="(min-width: 1152px) 552px, (min-width: 768px) 46vw, 100vw" width="800" height="533" loading="lazy" alt="Une intervenante anime un atelier avec deux étudiants et une étudiante, autour d’une table où sont posées des cartes de couleur." class="-mx-6 -mt-6 mb-6 aspect-[3/2] w-[calc(100%+3rem)] max-w-none rounded-t-3xl object-cover" />
+            <p><span class="inline-block rounded-full bg-indigo px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">Sur vos campus</span></p>
+            <h3 class="mt-4 text-2xl">Les ateliers CoChoice</h3>
+            <p class="mt-2">Des ateliers mixtes d’une heure trente pour parler de ce que la contraception implique au quotidien&nbsp;: qui s’informe, qui anticipe, qui prend les rendez-vous, qui paie.</p>
+            <ul class="mt-4 space-y-2">
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2 size-2 shrink-0 rounded-full bg-rose"></span><span>Animés avec un·e professionnel·le de santé et vos relais santé, sur les campus que vous couvrez</span></li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2 size-2 shrink-0 rounded-full bg-rose"></span><span>Pensés pour les étudiants autant que pour les étudiantes, sans jugement ni culpabilisation</span></li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2 size-2 shrink-0 rounded-full bg-rose"></span><span>Un kit d’animation réutilisable que vos équipes de prévention conservent</span></li>
+            </ul>
+          </article>
+          <article class="card flex flex-col">
+            <img src="/images/appli-800.webp" srcset="/images/appli-480.webp 480w, /images/appli-800.webp 800w" sizes="(min-width: 1152px) 552px, (min-width: 768px) 46vw, 100vw" width="800" height="533" loading="lazy" alt="Un téléphone posé sur un bureau affiche l’accueil de l’appli CoChoice avec des données fictives : tâche à faire, frais du mois et check-in mensuel." class="-mx-6 -mt-6 mb-6 aspect-[3/2] w-[calc(100%+3rem)] max-w-none rounded-t-3xl object-cover" />
+            <p><span class="inline-block rounded-full bg-pervenche-texte px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">Pour vos adhérent·es</span></p>
+            <h3 class="mt-4 text-2xl">L’appli CoChoice</h3>
+            <p class="mt-2">Après l’atelier, les partenaires se répartissent les rappels, les rendez-vous et les frais, puis font le point chaque mois.</p>
+            <ul class="mt-4 space-y-2">
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2 size-2 shrink-0 rounded-full bg-pervenche"></span><span>Gratuite pour les étudiant·es, mise à disposition par votre mutuelle</span></li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2 size-2 shrink-0 rounded-full bg-pervenche"></span><span>La personne qui utilise la contraception décide de ce qui est partagé</span></li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2 size-2 shrink-0 rounded-full bg-pervenche"></span><span>L’effet de votre action de prévention se prolonge après l’atelier</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. NOS ENGAGEMENTS SUR LES DONNÉES (mis en avant à la demande du jury J5) -->
+    <section class="container-site py-20">
+      <div class="card mx-auto max-w-4xl md:p-10">
+        <p class="surtitre text-center">Données personnelles</p>
+        <h2 class="mt-3 text-center text-2xl md:text-3xl">Vous ne voyez jamais les réponses de vos adhérent·es.</h2>
+        <ul class="mt-8 grid gap-6 text-center md:grid-cols-3">
+          <li><h3 class="text-lg">Aucune donnée de santé</h3><p class="mt-1">L’appli ne demande ni méthode de contraception, ni cycle, ni information médicale.</p></li>
+          <li><h3 class="text-lg">Rien d’individuel transmis</h3><p class="mt-1">Votre mutuelle reçoit uniquement des indicateurs agrégés et anonymisés.</p></li>
+          <li><h3 class="text-lg">Aucun usage assurantiel</h3><p class="mt-1">Les données du programme ne servent jamais à la souscription ni à la tarification.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. COMMENT ÇA SE PASSE -->
+    <section class="bg-lavande py-20">
+      <div class="container-site">
+        <p class="surtitre">Comment ça se passe</p>
+        <h2 class="mt-3 max-w-3xl text-3xl md:text-4xl">Du rendez-vous au bilan, un pilote simple à lancer.</h2>
+        <ol class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="card"><span aria-hidden="true" class="text-3xl font-black text-rose-texte">1</span><h3 class="mt-2 text-lg">Rendez-vous de 30&nbsp;min</h3><p class="mt-1">Vos actions de prévention, vos campus partenaires, vos priorités de l’année.</p></li>
+          <li class="card"><span aria-hidden="true" class="text-3xl font-black text-pervenche-texte">2</span><h3 class="mt-2 text-lg">Pilote sur mesure</h3><p class="mt-1">Un campus, un calendrier et des objectifs fixés avec l’établissement.</p></li>
+          <li class="card"><span aria-hidden="true" class="text-3xl font-black text-indigo">3</span><h3 class="mt-2 text-lg">Ateliers et appli</h3><p class="mt-1">Nous animons avec vos relais santé, les étudiant·es repartent avec l’appli.</p></li>
+          <li class="card"><span aria-hidden="true" class="text-3xl font-black text-rose-texte">4</span><h3 class="mt-2 text-lg">Bilan anonymisé</h3><p class="mt-1">Participation, mixité, satisfaction et usage de l’appli, prêts pour votre rapport de prévention.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="container-site max-w-3xl py-20">
+      <p class="surtitre">Vos questions</p>
+      <h2 class="mt-3 text-3xl md:text-4xl">Questions fréquentes</h2>
+      <details class="card mt-6"><summary class="cursor-pointer rounded font-bold text-indigo focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-pervenche-texte">Comment le programme est-il financé&nbsp;?</summary><p class="mt-2">Votre mutuelle finance les ateliers et l’accès à l’appli, gratuite pour les étudiant·es, le cas échéant aux côtés de l’établissement. Le tarif dépend du nombre de campus et d’ateliers&nbsp;: nous vous faisons une proposition sur devis après le rendez-vous.</p></details>
+      <details class="card mt-4"><summary class="cursor-pointer rounded font-bold text-indigo focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-pervenche-texte">Nous menons déjà des actions de prévention. Qu’apportez-vous de plus&nbsp;?</summary><p class="mt-2">Un angle précis, le partage de la charge contraceptive entre partenaires, et une continuité après l’atelier grâce à l’appli. Le programme s’intègre à vos actions et à vos relais santé, sans les remplacer.</p></details>
+      <details class="card mt-4"><summary class="cursor-pointer rounded font-bold text-indigo focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-pervenche-texte">L’appli est-elle réservée à vos adhérent·es&nbsp;?</summary><p class="mt-2">C’est à définir ensemble&nbsp;: ouverte à tous les étudiant·es d’un campus partenaire, ou proposée en priorité à vos adhérent·es. L’adhésion n’est jamais une condition pour participer aux ateliers.</p></details>
+      <details class="card mt-4"><summary class="cursor-pointer rounded font-bold text-indigo focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-pervenche-texte">CoChoice donne-t-il des conseils médicaux&nbsp;?</summary><p class="mt-2">Non. Les contenus sont relus par des professionnel·les de santé et nous orientons vers les services de santé étudiante ou un·e médecin pour toute question individuelle. Le choix de la méthode appartient toujours à la personne qui l’utilise.</p></details>
+      <details class="card mt-4"><summary class="cursor-pointer rounded font-bold text-indigo focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-pervenche-texte">Où en est le projet&nbsp;?</summary><p class="mt-2">CoChoice est un projet étudiant en développement. L’appli existe sous forme de prototype testé avec des données fictives, et nous cherchons une première mutuelle partenaire pour un pilote.</p></details>
+    </section>
+
+    <!-- 8. CTA FINAL -->
+    <section class="bg-rose py-16 text-center">
+      <div class="container-site">
+        <h2 class="text-3xl md:text-4xl">Lançons un premier pilote avec votre mutuelle.</h2>
+        <p class="mt-3 text-lg font-semibold text-indigo">30 minutes pour voir si CoChoice trouve sa place dans votre programme de prévention.</p>
+        <button type="button" data-open-demo class="btn-primary mt-6 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-indigo">Prendre rendez-vous</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER minimal -->
+  <footer class="bg-indigo text-white">
+    <div class="container-site flex flex-col items-center gap-4 py-10 text-center">
+      <p class="text-2xl font-black">CoChoice</p>
+      <p class="font-bold">La contraception, ça se pense à deux.</p>
+      <p class="text-sm"><a class="underline underline-offset-4 hover:text-rose" href="mentions-legales.html">Mentions légales et données personnelles</a></p>
+      <p class="text-sm text-white/75">© <span data-year></span> CoChoice · Groupe 13 · Rocket School ChangeMaker Project</p>
+    </div>
+  </footer>
+
+  <!-- POP-UP « Prendre rendez-vous » -->
+  <dialog id="demo" aria-labelledby="demo-titre" class="m-auto max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-xl overflow-y-auto rounded-3xl bg-white p-0 text-encre shadow-xl backdrop:bg-indigo/70 backdrop:backdrop-blur-sm">
+    <div class="relative p-6 sm:p-8">
+      <button type="button" data-close-demo aria-label="Fermer" class="absolute top-4 right-4 inline-flex size-10 items-center justify-center rounded-full text-2xl leading-none text-indigo hover:bg-lavande focus-visible:outline-3 focus-visible:outline-pervenche-texte">×</button>
+      <h2 id="demo-titre" class="pr-10 text-2xl sm:text-3xl">Prenons rendez-vous</h2>
+      <p class="mt-2">Laissez vos coordonnées, nous revenons vers vous pour fixer un créneau de 30 minutes.</p>
+      <p class="mt-1 text-sm">Les champs marqués d’un astérisque (*) sont obligatoires.</p>
+
+      <form id="demo-form" class="mt-6 grid gap-4 sm:grid-cols-2" novalidate>
+        <div>
+          <label for="demo-prenom" class="block font-semibold text-indigo">Prénom <span aria-hidden="true">*</span></label>
+          <input id="demo-prenom" name="prenom" type="text" required autocomplete="given-name" class="mt-1 w-full rounded-xl border border-indigo/30 px-4 py-3 focus:outline-3 focus:outline-pervenche-texte aria-[invalid=true]:border-rose-texte" />
+        </div>
+        <div>
+          <label for="demo-nom" class="block font-semibold text-indigo">Nom <span aria-hidden="true">*</span></label>
+          <input id="demo-nom" name="nom" type="text" required autocomplete="family-name" class="mt-1 w-full rounded-xl border border-indigo/30 px-4 py-3 focus:outline-3 focus:outline-pervenche-texte aria-[invalid=true]:border-rose-texte" />
+        </div>
+        <div>
+          <label for="demo-fonction" class="block font-semibold text-indigo">Fonction <span aria-hidden="true">*</span></label>
+          <input id="demo-fonction" name="fonction" type="text" required autocomplete="organization-title" class="mt-1 w-full rounded-xl border border-indigo/30 px-4 py-3 focus:outline-3 focus:outline-pervenche-texte aria-[invalid=true]:border-rose-texte" />
+        </div>
+        <div>
+          <label for="demo-organisation" class="block font-semibold text-indigo">Mutuelle <span aria-hidden="true">*</span></label>
+          <input id="demo-organisation" name="organisation" type="text" required autocomplete="organization" class="mt-1 w-full rounded-xl border border-indigo/30 px-4 py-3 focus:outline-3 focus:outline-pervenche-texte aria-[invalid=true]:border-rose-texte" />
+        </div>
+        <div class="sm:col-span-2">
+          <label for="demo-service" class="block font-semibold text-indigo">Votre service <span aria-hidden="true">*</span></label>
+          <select id="demo-service" name="service" required class="mt-1 w-full rounded-xl border border-indigo/30 bg-white px-4 py-3 focus:outline-3 focus:outline-pervenche-texte aria-[invalid=true]:border-rose-texte">
+            <option value="">Choisissez une option</option>
+            <option>Prévention et promotion de la santé</option>
+            <option>Partenariats et relations établissements</option>
+            <option>Communication et marketing</option>
+            <option>Direction</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="demo-email" class="block font-semibold text-indigo">Email professionnel <span aria-hidden="true">*</span></label>
+          <input id="demo-email" name="email" type="email" required autocomplete="email" class="mt-1 w-full rounded-xl border border-indigo/30 px-4 py-3 focus:outline-3 focus:outline-pervenche-texte aria-[invalid=true]:border-rose-texte" />
+        </div>
+        <div class="flex gap-3 sm:col-span-2">
+          <input id="demo-consentement" name="consentement" type="checkbox" value="Oui" required class="mt-1 size-5 shrink-0 accent-indigo focus:outline-3 focus:outline-offset-2 focus:outline-pervenche-texte" />
+          <label for="demo-consentement" class="text-sm">J’accepte que CoChoice utilise ces informations pour me recontacter au sujet de ma demande. Elles ne sont jamais revendues et je peux demander leur suppression à tout moment. <span aria-hidden="true">*</span></label>
+        </div>
+        <div class="text-sm sm:col-span-2">
+          <a href="mentions-legales.html#donnees-contact" target="_blank" class="rounded font-semibold text-pervenche-texte underline underline-offset-4 hover:text-indigo focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-pervenche-texte">En savoir plus sur l’utilisation de vos données<span class="sr-only"> (nouvel onglet)</span></a>
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="btn-primary w-full focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-pervenche-texte disabled:cursor-wait disabled:opacity-60">Envoyer ma demande</button>
+          <p role="status" aria-live="polite" data-demo-status class="mt-3 text-sm font-semibold text-indigo empty:hidden data-[state=error]:text-rose-texte"></p>
+        </div>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>
