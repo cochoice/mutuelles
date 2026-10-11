@@ -7,7 +7,7 @@ Un seul objectif : la **prise de rendez-vous de 30 min** en vue d'un pilote (CTA
 Site **séparé** du site étudiant (`cochoice.github.io`) et de la page établissements : aucune modification de ces sites.
 
 ## Stack
-Reprise à l'identique de `cochoice/etablissements` : Vite 7, Tailwind CSS v4, HTML statique, JS vanilla, GitHub Pages (`base: './'`).
+Reprise de `cochoice/etablissements` : Vite 7, Tailwind CSS v4, HTML statique, JS vanilla, GitHub Pages (`base: './'`). Seule différence : le formulaire passe par Tally au lieu de Google Forms.
 
 ## Points à ne pas perdre
 - Ne jamais promettre une baisse des remboursements : la contraception des moins de 26 ans et l'IVG relèvent de l'Assurance maladie.
@@ -22,6 +22,8 @@ Reprise à l'identique de `cochoice/etablissements` : Vite 7, Tailwind CSS v4, H
 ## Charte, ton et règles
 Identiques à `cochoice/etablissements` (Nunito, palette V2, vouvoiement, aucun chiffre non sourcé, pas de tiret cadratin, page < 1,5 Mo, RGPD).
 
-## Reste à compléter
-- `src/scripts/config.js` : URL et identifiants du Google Form « Demandes de rendez-vous CoChoice (mutuelles) ».
+## Formulaire
+- Tally, formulaire `2Eqx0g` (« Prenons rendez-vous »), compte Tally de Josselin. Hébergement UE, conforme à la charte d'approvisionnement (Tally retenu, Google Forms écarté).
+- Intégré dans la pop-up par une iframe chargée au premier clic seulement (aucun script tiers au chargement, EcoIndex préservé). Champ caché `source=landing-mutuelles`.
+- Les questions se modifient dans Tally, pas dans le code. Réponses : onglet Submissions de Tally, à purger après 1 mois (engagement RGPD).
 - Contact RGPD : antoinebellanger.public@gmail.com (même adresse que la page établissements).
