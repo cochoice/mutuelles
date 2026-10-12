@@ -25,5 +25,6 @@ Identiques à `cochoice/etablissements` (Nunito, palette V2, vouvoiement, aucun 
 ## Formulaire
 - Tally, formulaire `2Eqx0g` (« Prenons rendez-vous »), compte Tally de Josselin. Hébergement UE, conforme à la charte d'approvisionnement (Tally retenu, Google Forms écarté).
 - Intégré dans la pop-up par une iframe chargée au premier clic seulement (aucun script tiers au chargement, EcoIndex préservé). Champ caché `source=landing-mutuelles`.
+- Au même clic, le script officiel `tally.so/widgets/embed.js` est chargé avec `dynamicHeight=1` : l'iframe prend la hauteur du formulaire, une seule barre de défilement (celle de la pop-up). Si le script échoue, l'iframe repasse à une hauteur fixe.
 - Les questions se modifient dans Tally, pas dans le code. Réponses : onglet Submissions de Tally, à purger après 1 mois (engagement RGPD).
 - Contact RGPD : antoinebellanger.public@gmail.com (même adresse que la page établissements).

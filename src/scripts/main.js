@@ -28,9 +28,29 @@ function initDemo() {
   const link = dialog.querySelector('[data-tally-link]')
   link.href = `https://tally.so/r/${formId}?source=${source}`
 
+  const embedUrl = `https://tally.so/embed/${formId}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&source=${source}`
+  let loaded = false
+
+  // Le script officiel de Tally ajuste la hauteur de l'iframe à son contenu :
+  // une seule barre de défilement (celle de la pop-up) et scroll vers le premier champ en erreur.
+  // Chargé au premier clic seulement ; en cas d'échec, l'iframe garde une hauteur fixe.
+  function loadForm() {
+    if (loaded) return
+    loaded = true
+    frame.dataset.tallySrc = embedUrl
+    const script = document.createElement('script')
+    script.src = 'https://tally.so/widgets/embed.js'
+    script.onload = () => window.Tally?.loadEmbeds()
+    script.onerror = () => {
+      frame.classList.add('h-[46rem]')
+      frame.src = embedUrl
+    }
+    document.head.appendChild(script)
+  }
+
   document.querySelectorAll('[data-open-demo]').forEach((btn) =>
     btn.addEventListener('click', () => {
-      if (!frame.src) frame.src = `https://tally.so/embed/${formId}?alignLeft=1&hideTitle=1&transparentBackground=1&source=${source}`
+      loadForm()
       dialog.showModal()
     }),
   )
